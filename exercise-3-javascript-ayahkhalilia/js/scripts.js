@@ -21,6 +21,7 @@ function addRectangle() {
     new_rectangle.style.backgroundColor=chooseRectangleColor();
     new_rectangle.innerHTML=initRectangles();
     black_rectangle.appendChild(new_rectangle);
+    
 }
 
 function subtractRectangle() {
