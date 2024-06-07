@@ -1,17 +1,23 @@
 window.onload = () => {
-    fetch("data/music.json")
+    fetch("/exercise-3-javascript-ayahkhalilia/data/music.json")
           .then(Response =>Response.json())
           .then(data => console.log(data));
 }
 
 function initRectangles() {
-    
+    const main =document.getElementsByTagName("main")[0];
+    let articles="";
+    for (i=0;i<12;i++){
+        articles += `<article>${array_name[i]}</article>`;
+    }
+    main.innerHTML=articles;
 }
 
 function initSongs() {
 }
 
 function chooseRectangleColor() {
+    
 }
 
 function addRectangle() {
