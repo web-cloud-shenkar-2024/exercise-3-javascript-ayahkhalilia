@@ -14,6 +14,12 @@ function chooseRectangleColor() {
 }
 
 function addRectangle() {
+    var black_rectangle=document.getElementById("black_rectangle");
+    var new_rectangle=document.createElement("div");
+    new_rectangle.className="small_rectangles";
+    new_rectangle.style.backgroundColor=chooseRectangleColor();
+    new_rectangle.innerHTML=initRectangles();
+    black_rectangle.appendChild(new_rectangle);
 }
 
 function subtractRectangle() {
