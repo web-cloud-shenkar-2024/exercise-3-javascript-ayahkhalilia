@@ -1,4 +1,7 @@
 window.onload = () => {
+    fetch("/data/music.json")
+          .then(Response =>Response.json())
+          .then(data => console.log(data));
 }
 
 function initRectangles() {
