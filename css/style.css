@@ -13,9 +13,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.wrapper {
+#wrapper {
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     min-height: auto; 
     margin: 0;
@@ -23,13 +24,13 @@ body {
 }
 
 @media screen and(max-width:992px){
-    .wrapper {
+    #wrapper {
         padding: 15px;
     }
 }
 
 @media screen and(max-width:768px){
-    .wrapper {
+    #wrapper {
         padding: 10px;
     }
 }
@@ -53,7 +54,7 @@ main {
 }
 
 .black-rectangle {
-    padding: 20px;
+    
     display: flex;
     flex-wrap: wrap;
     background-color: black;
@@ -62,6 +63,7 @@ main {
     min-height: 100vh;
     align-content: flex-start;
     padding: 20px;
+    justify-content: left;
 }
 
 .plus {
@@ -100,14 +102,47 @@ main {
     margin-left: 10px;
 }
 
-.small-rectangles {
-    justify-items: center;
-    width: 150px;
-    height: 150px;
+.small_rectangles {
+    justify-items: center; 
+    
     margin-right: 20px;
     margin-bottom: 20px;
+
     display: flex;
-    background-color: blueviolet;
+    justify-content: center;
+            width: 150px;
+    height: 150px;
     align-items: center top;
+   
 }
 
+.small_rectangles h3{
+
+        font-size: 30px;
+
+}
+
+
+.songs_list {
+    color: white;
+    font-size: 30px;
+}
+
+h1{
+    color: white;
+    margin-left: 250px;
+    font-weight: bold;
+    display: block;
+}
+
+ul{
+    justify-content: left;
+    margin-top: 30px;
+    margin-left: 20px;
+    position: absolute;
+}
+
+li{
+    color: white;
+    padding-top: 20px;
+}
