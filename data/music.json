@@ -1,3 +1,30 @@
 {
-
+    "category": "spotify top songs 2023",
+    "songs": [
+    {
+    "id": "1",
+    "artist": "Miley Cyrus",
+    "name": "Flower"
+    },
+    {
+    "id": "2",
+    "artist": "Ryan Gosling",
+    "name": "I'm Just Ken"
+    },
+    {
+    "id": "3",
+    "artist": "David Guetta",
+    "name": "I'm Good (Blue)"
+    },
+    {
+        "id": "4",
+        "artist": "Shakira",
+        "name": "TQG"
+    },
+    {
+        "id": "5",
+        "artist": "Eslabon Armado",
+        "name": "Ella baila sola"
+        }
+    ]
 }
