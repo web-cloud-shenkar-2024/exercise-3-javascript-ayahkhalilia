@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>ayah khalilia - Javascript Ex.3</title>
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/scripts.js"></script>
+        <script src="js/scripts.js"> type="text/javasccript"</script>
 	</head>
 	<body>
         <header>
@@ -13,18 +13,20 @@
                 <button onclick="addRectangle()" id="plus_btn">+</button>
             </div>
             <div class="switch">
-                <button type="button">Switch to songs</button>
+                <button onclick="switchRectanglesSongs()"id="switch_btn">Switch to songs</button>
             </div>
             <div class="minus">
                 <button onclick="subtractRectangle()" id="minus_btn">-</button>
             </div>
-        </header>
+        </header><div id="wrapper"></div>
         <main>
-          <div id="wrapper">
+          
             <div class="black-rectangle" id="black_rectangle">
-                <div class="small-rectangles" id="small_rectangles"></div>
-            </div>
-          </div>
-        </main>
+            </div>   
+
+                
+            
+          
+        </main></div>
 	</body>
 </html>
