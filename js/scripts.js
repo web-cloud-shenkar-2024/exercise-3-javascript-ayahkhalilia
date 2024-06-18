@@ -71,7 +71,35 @@ function subtractRectangle() {
 }
 
 function switchRectanglesSongs() {
+    const switch_to= document.getElementById("switch_btn");
+    const songslist = document.getElementById("songs_list");
+    var black_rec=document.getElementById("black_rectangle");
+    if(switch_to.textContent=="Switch to songs"){
+        rectangle=rectangles_count;
+        switch_to.innerHTML="Switch to rectangles";
+        document.getElementById("plus_btn").onclick=null;
+        document.getElementById("minus_btn").onclick=null;
+         while(black_rec.firstChild){
+                    subtractRectangle();  
+
+         }          
+         curr_arr_count=0;
+         curr_color_count=0;
+        populateSongsInList();
+    }else if(switch_to.textContent=="Switch to rectangles") {
+                 switch_to.innerHTML="Switch to songs"; 
+                 document.getElementById("plus_btn").onclick=addRectangle;
+                 document.getElementById("minus_btn").onclick=subtractRectangle;
+                 black_rec.innerHTML = "";
+                 for(let i=0;i<rectangle;i++){
+                    addRectangle();
+                }
+
+               }
 }
 
 function populateSongsInList() {
+   
+        initSongs();
+    
 }
