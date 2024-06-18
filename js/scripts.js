@@ -12,12 +12,19 @@ window.onload = () => {
 }
 
 function initRectangles() {
+        const element=curr_arr_count;
+        curr_arr_count=(curr_arr_count+1)%array_name.length;
+        return array_name[element];
 }
 
 function initSongs() {
 }
 
 function chooseRectangleColor() {
+    
+    const color = colors[curr_color_count];
+    curr_color_count = (curr_color_count + 1) % colors.length; 
+    return color;
 }
 
 function addRectangle() {
